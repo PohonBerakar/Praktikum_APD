@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="2409106051_MuhammadHuseinPermadi_B24_PT2"/>
+        <attribute name="authors" value="ASUS"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-18 08.59.26 PM"/>
+        <attribute name="created" value="QVNVUztMQVBUT1AtVDQ5MlNNSzM7MjAyNC0wOS0xODswOC4yOS4xNiBQTTsyNjI2"/>
+        <attribute name="edited" value="QVNVUztMQVBUT1AtVDQ5MlNNSzM7MjAyNC0wOS0xODswOC41OS4yNiBQTTsyOzI3Mzk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nama, kelas" type="String" array="False" size=""/>
+            <declare name="umur, angkatan" type="Integer" array="False" size=""/>
+            <declare name="panjang, berat" type="Real" array="False" size=""/>
+            <input variable="nama"/>
+            <input variable="umur"/>
+            <input variable="kelas"/>
+            <input variable="angkatan"/>
+            <input variable="panjang"/>
+            <input variable="berat"/>
+            <output expression="&quot;Nama  : &quot; &amp; nama" newline="True"/>
+            <output expression="&quot;Umur  : &quot; &amp; umur" newline="True"/>
+            <output expression="&quot;Kelas : &quot; &amp; kelas" newline="True"/>
+            <output expression="&quot;Angkatan : &quot; &amp; angkatan" newline="True"/>
+            <output expression="&quot;Panjang badan : &quot; &amp; panjang" newline="True"/>
+            <output expression="&quot;Berat : &quot; &amp; berat" newline="True"/>
+            <if expression="umur&gt;=18">
+                <then>
+                    <output expression="&quot;Apakah umur 18 atau lebih? True&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Apakah umur 18 atau lebih? False&quot;" newline="True"/>
+                </else>
+            </if>
+            <output expression="&quot;Total penjumlahan semua int dan float adalah : &quot; &amp; umur+angkatan+panjang+berat" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

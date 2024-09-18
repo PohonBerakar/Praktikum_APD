@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="2409106051_B24"/>
+        <attribute name="authors" value="ASUS"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-11 07.56.20 PM"/>
+        <attribute name="created" value="QVNVUztMQVBUT1AtVDQ5MlNNSzM7MjAyNC0wOS0xMTswMi40OS4xNyBQTTsyNjE2"/>
+        <attribute name="edited" value="QVNVUztMQVBUT1AtVDQ5MlNNSzM7MjAyNC0wOS0xMTswNy41Ni4yMCBQTTs4OzI3Mjg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="tb, d, b" type="Real" array="False" size=""/>
+            <input variable="tb"/>
+            <if expression="tb &lt; 100000">
+                <then>
+                    <assign variable="d" expression="0"/>
+                    <output expression="&quot;Selamat! anda tidak mendapatkan diskon Awokaokw, Total belanjaan anda adalah Rp.&quot; &amp; tb" newline="True"/>
+                </then>
+                <else>
+                    <if expression="tb &gt;= 100000 and tb &lt; 500000">
+                        <then>
+                            <assign variable="d" expression="0.05 * tb"/>
+                            <output expression="&quot;Selamat, karena total belanjaan anda mencapai Rp. 100.000 , anda mendapatkan potongan sebesar 5% , total belanjaan anda adalah Rp.&quot; &amp; tb-d" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="tb &gt;= 500000 and tb &lt; 1000000">
+                                <then>
+                                    <assign variable="d" expression="0.1 * tb"/>
+                                    <output expression="&quot;Selamat, karena total belanjaan anda mencapai Rp. 500.000 , anda mendapatkan potongan sebesar 10% , total belanjaan anda adalah Rp.&quot; &amp; tb-d" newline="True"/>
+                                </then>
+                                <else>
+                                    <assign variable="d" expression="0.2 * tb"/>
+                                    <output expression="&quot;Selamat, karena total belanjaan anda mencapai Rp. 1.000.000 , anda mendapatkan potongan sebesar 20% , total belanjaan anda adalah Rp.&quot; &amp; tb-d" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                    <assign variable="b" expression="tb-d"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
